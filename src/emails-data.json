@@ -1,0 +1,137 @@
+{
+  "giftcard": {
+    "name": "GiftCard",
+    "mockData": {
+      "user": {
+        "first_name": "Igor",
+        "last_name": "Marracho"
+      },
+      "image": "https://github.blog/wp-content/uploads/2022/06/Copilot.jpeg",
+      "gift_card_amount": "100€",
+      "gift_card_code": "#GITHUB-XYZ"
+    }
+  },
+  "orderpayment": {
+    "name": "OrderPayment",
+    "mockData": {
+      "user": {
+        "first_name": "Igor",
+        "last_name": "Marracho"
+      }
+    }
+  },
+  "invoiceReady": {
+    "name": "InvoiceReady",
+    "mockData": {
+      "user": {
+        "first_name": "Igor",
+        "last_name": "Marracho"
+      },
+      "number": "1234",
+      "download_url": "/"
+    }
+  },
+  "orderRefund": {
+    "name": "OrderRefund",
+    "mockData": {
+      "user": {
+        "first_name": "Igor",
+        "last_name": "Marracho"
+      },
+      "amount": "€3896,00"
+    }
+  },
+  "orderCancelled": {
+    "name": "OrderCancelled",
+    "mockData": {
+      "user": {
+        "first_name": "Igor",
+        "last_name": "Marracho"
+      },
+      "order_number": "1234"
+    }
+  },
+  "orderFullfillment": {
+    "name": "OrderFullfillment",
+    "mockData": {
+      "user": {
+        "first_name": "Igor",
+        "last_name": "Marracho"
+      },
+      "fulfillment": {
+        "tracking_number": "1234"
+      },
+      "order": {
+        "lines": [
+          {
+            "product_name": "PRO",
+            "variant_name": "Team Montly",
+            "quantity": "1",
+            "image": "https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
+          },
+          {
+            "product_name": "PRO",
+            "variant_name": "Enterprise Montly",
+            "quantity": "2",
+            "image": "https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
+          }
+        ]
+      }
+    }
+  },
+  "fullfillmentUpdate": {
+    "name": "FullfillmentUpdate",
+    "mockData": {
+      "user": {
+        "first_name": "Igor",
+        "last_name": "Marracho"
+      },
+      "fulfillment": {
+        "tracking_number": "1234"
+      },
+      "order": {
+        "lines": [
+          {
+            "product_name": "PRO",
+            "variant_name": "Team Montly",
+            "quantity": "2",
+            "image": "https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
+          },
+          {
+            "product_name": "PRO",
+            "variant_name": "Enterprise Montly",
+            "quantity": "2",
+            "image": "https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
+          }
+        ]
+      }
+    }
+  },
+  "orderConfirmation": {
+    "name": "OrderConfirmation",
+    "mockData": {
+      "user": {
+        "first_name": "Igor",
+        "last_name": "Marracho"
+      },
+      "order": {
+        "lines": [
+          {
+            "product_name": "PRO",
+            "variant_name": "Team Montly",
+            "quantity": "2",
+            "image": "https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg",
+            "price": "1960"
+          },
+          {
+            "product_name": "PRO",
+            "variant_name": "Enterprise Montly",
+            "quantity": "2",
+            "image": "https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg",
+            "price": "1960"
+          }
+        ]
+      }
+    }
+  }
+}

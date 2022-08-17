@@ -1,0 +1,32 @@
+{
+  "name": "email-templating",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "build:watch": "babel src --out-dir dist --watch",
+    "prestart": "npm run build",
+    "start:server": "nodemon ./dist/server.js --watch ./dist",
+    "start": "concurrently \"npm run build:watch\" \"npm run start:server\"",
+    "export": "npm run build && node ./dist/export.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-plugin-inline-json-import": "^0.3.2"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "express": "^4.17.2",
+    "handlebars": "^4.7.7",
+    "mjml": "^4.12.0",
+    "mjml-react": "^2.0.3",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
